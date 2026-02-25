@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로또 번호 생성기</title>
+  <title>Lotto Generator | Premium Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="theme-toggle">
-    <button onclick="toggleTheme()">테마 변경</button>
-  </div>
+  <div class="container">
+    <div class="theme-toggle">
+      <button onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
 
-  <h1>🎰 로또 번호 생성기 (6/45)</h1>
-  <div class="numbers" id="result">버튼을 눌러주세요</div>
-  <button onclick="generateLotto()">번호 생성</button>
+    <h1>Lotto 6/45</h1>
+    <p class="subtitle">Premium Number Generator</p>
+
+    <div class="numbers-container" id="result-container">
+      <!-- Numbers will appear here as balls -->
+    </div>
+
+    <button class="generate-btn" onclick="generateLotto()">Generate Numbers</button>
+    
+    <p id="status-text">Click the button to get started</p>
+  </div>
 
   <script src="main.js"></script>
 </body>
